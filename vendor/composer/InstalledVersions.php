@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '3b7f0569c801e6ccf41b1340ebb33a214f83b88d',
+    'reference' => 'e8be8ccb815f08311b706fabd5b69770c28da5af',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -154,6 +154,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/business_responsive_theme' => 
+    array (
+      'pretty_version' => '2.0.2',
+      'version' => '2.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.2',
     ),
     'drupal/ckeditor' => 
     array (
@@ -464,6 +473,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/duration_field' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.0',
+    ),
     'drupal/dynamic_page_cache' => 
     array (
       'replaced' => 
@@ -755,7 +773,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '3b7f0569c801e6ccf41b1340ebb33a214f83b88d',
+      'reference' => 'e8be8ccb815f08311b706fabd5b69770c28da5af',
     ),
     'drupal/responsive_image' => 
     array (
