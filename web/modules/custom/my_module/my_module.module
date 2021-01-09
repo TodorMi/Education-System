@@ -1,0 +1,18 @@
+<?php
+ 
+use Drupal\node\Entity\Node;
+ 
+function my_module_node_presave(Drupal\Core\Entity\EntityInterface $entity) {
+    if ($entity->bundle() !== 'shop_type') {
+        return;
+    }
+    $config = \Drupal::config('my_module.settings');
+    $country_of_origin = $config->get('country_of_origin');
+    # If the variable is not set/config name is wrong -> we return nothing and exit the hook
+    if (!$country_of_origin) {
+        return;
+    }
+    $node = Node::load($entity->id());
+    $node->set('field_country_of_origin', $country_of_origin);
+    $$node->save();
+}

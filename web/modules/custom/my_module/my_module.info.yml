@@ -1,0 +1,6 @@
+name: My custom module
+description: my new module for d9.com
+package: Custom
+type: module
+core_version_requirement: 9.x
+

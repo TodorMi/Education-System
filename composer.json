@@ -16,13 +16,16 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/awesome_zymphonies_theme": "^2.0",
         "drupal/business_responsive_theme": "^2.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/duration_field": "2.0",
         "drupal/paragraphs": "^1.12",
-        "drupal/webform": "~6.0"
+        "drupal/webform": "~6.0",
+        "drupal/zinble": "^2.0",
+        "drupal/zuvi": "^1.5"
     },
     "conflict": {
         "drupal/drupal": "*"

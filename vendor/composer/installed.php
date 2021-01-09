@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'e8be8ccb815f08311b706fabd5b69770c28da5af',
+    'reference' => '46f8e26983c17c3ad3ec6c5fbb821bff9309e782',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -85,6 +85,15 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/awesome_zymphonies_theme' => 
+    array (
+      'pretty_version' => '2.0.3',
+      'version' => '2.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.3',
     ),
     'drupal/ban' => 
     array (
@@ -760,7 +769,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'e8be8ccb815f08311b706fabd5b69770c28da5af',
+      'reference' => '46f8e26983c17c3ad3ec6c5fbb821bff9309e782',
     ),
     'drupal/responsive_image' => 
     array (
@@ -938,6 +947,24 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/zinble' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.0',
+    ),
+    'drupal/zuvi' => 
+    array (
+      'pretty_version' => '1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.5',
     ),
     'egulias/email-validator' => 
     array (
