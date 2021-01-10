@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '46f8e26983c17c3ad3ec6c5fbb821bff9309e782',
+    'reference' => 'a74ae3a04f04e3b22d0b276703085dae1b2136bb',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -115,6 +115,15 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/better_exposed_filters' => 
+    array (
+      'pretty_version' => '5.0.0-beta1',
+      'version' => '5.0.0.0-beta1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-5.0-beta1',
     ),
     'drupal/big_pipe' => 
     array (
@@ -592,6 +601,42 @@
         0 => '9.1.0',
       ),
     ),
+    'drupal/jquery_ui' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.4',
+    ),
+    'drupal/jquery_ui_datepicker' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.0',
+    ),
+    'drupal/jquery_ui_slider' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
+    ),
+    'drupal/jquery_ui_touch_punch' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1.0.0',
+    ),
     'drupal/jsonapi' => 
     array (
       'replaced' => 
@@ -769,7 +814,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '46f8e26983c17c3ad3ec6c5fbb821bff9309e782',
+      'reference' => 'a74ae3a04f04e3b22d0b276703085dae1b2136bb',
     ),
     'drupal/responsive_image' => 
     array (

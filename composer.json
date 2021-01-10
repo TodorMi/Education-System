@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/awesome_zymphonies_theme": "^2.0",
+        "drupal/better_exposed_filters": "@beta",
         "drupal/business_responsive_theme": "^2.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
