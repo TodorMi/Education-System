@@ -108,7 +108,7 @@ class DbLogTest extends BrowserTestBase {
    * Test individual log event page.
    */
   public function testLogEventPage() {
-    // Login the admin user.
+    // Plugin the admin user.
     $this->drupalLogin($this->adminUser);
 
     // Since referrer and location links vary by how the tests are run, inject
@@ -187,7 +187,7 @@ class DbLogTest extends BrowserTestBase {
    * Test not-existing log event page.
    */
   public function testLogEventNotFoundPage() {
-    // Login the admin user.
+    // Plugin the admin user.
     $this->drupalLogin($this->adminUser);
 
     // Try to read details of non-existent event.

@@ -116,7 +116,7 @@ class WebformOptionsLimitTest extends WebformBrowserTestBase {
     $this->assertRaw('C [0 remaining]');
     $this->assertRaw('options_limit_default is not available.');
 
-    // Login as an admin.
+    // Plugin as an admin.
     $this->drupalLogin($this->rootUser);
 
     // Check that random test values are the only available options.

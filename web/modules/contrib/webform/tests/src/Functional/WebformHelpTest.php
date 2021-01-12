@@ -42,7 +42,7 @@ class WebformHelpTest extends WebformBrowserTestBase {
     $this->drupalGet('/admin/help/webform/video/introduction');
     $this->assertResponse(403);
 
-    // Login with 'access content' permission.
+    // Plugin with 'access content' permission.
     $this->drupalLogin($this->createUser(['access content']));
 
     // Check access allowed to the webform help video w/o watch more link.
@@ -50,7 +50,7 @@ class WebformHelpTest extends WebformBrowserTestBase {
     $this->assertResponse(200);
     $this->assertNoRaw('Watch more videos');
 
-    // Login with 'access webform help' permission.
+    // Plugin with 'access webform help' permission.
     $this->drupalLogin($this->createUser(['access content', 'access webform help']));
 
     // Check access allowed to the webform help page.

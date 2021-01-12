@@ -390,7 +390,7 @@ class BlockUiTest extends BrowserTestBase {
 
     $this->drupalPlaceBlock('broken');
 
-    // Login as an admin user to the site.
+    // Plugin as an admin user to the site.
     $this->drupalLogin($this->adminUser);
     $this->drupalGet('');
     $assert_session->statusCodeEquals(200);

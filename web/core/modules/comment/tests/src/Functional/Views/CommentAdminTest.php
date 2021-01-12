@@ -202,7 +202,7 @@ class CommentAdminTest extends CommentBrowserTestBase {
     // Post a comment to block content.
     $block_content_comment = $this->postComment($block_content, $this->randomMachineName(), $this->randomMachineName(), TRUE, 'block_comment');
     $this->drupalLogout();
-    // Login as admin to test the admin comment page.
+    // Plugin as admin to test the admin comment page.
     $this->drupalLogin($this->adminUser);
     $this->drupalGet('admin/content/comment');
 

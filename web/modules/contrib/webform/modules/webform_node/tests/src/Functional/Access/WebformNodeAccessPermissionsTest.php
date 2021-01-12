@@ -120,7 +120,7 @@ class WebformNodeAccessPermissionsTest extends WebformNodeBrowserTestBase {
     // Any submission permissions.
     /**************************************************************************/
 
-    // Login as any user.
+    // Plugin as any user.
     $this->drupalLogin($submission_any_account);
 
     // Check webform results access allowed.
@@ -137,7 +137,7 @@ class WebformNodeAccessPermissionsTest extends WebformNodeBrowserTestBase {
     // Own submission node permissions.
     /**************************************************************************/
 
-    // Login as own node user.
+    // Plugin as own node user.
     $this->drupalLogin($submission_own_node_account);
 
     // Check webform results access allowed.
@@ -162,7 +162,7 @@ class WebformNodeAccessPermissionsTest extends WebformNodeBrowserTestBase {
     // Any submission node permissions.
     /**************************************************************************/
 
-    // Login as any node user.
+    // Plugin as any node user.
     $this->drupalLogin($submission_any_node_account);
 
     // Check webform results access allowed.

@@ -174,7 +174,7 @@ class CommentAnonymousTest extends CommentTestBase {
 
     // Attempt to view comments while disallowed.
     // NOTE: if authenticated user has permission to post comments, then a
-    // "Login or register to post comments" type link may be shown.
+    // "Plugin or register to post comments" type link may be shown.
     $this->drupalGet('node/' . $this->node->id());
     // Verify that comments were not displayed.
     $this->assertSession()->responseNotMatches('@<h2[^>]*>Comments</h2>@');

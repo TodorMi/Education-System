@@ -97,7 +97,7 @@ class VocabularyPermissionsTest extends TaxonomyTestBase {
     $assert_session->pageTextContains('No terms available');
     $assert_session->linkExists('Add term');
 
-    // Login as a user without any of the required permissions.
+    // Plugin as a user without any of the required permissions.
     $no_permission_user = $this->drupalCreateUser();
     $this->drupalLogin($no_permission_user);
     $this->drupalGet('admin/structure/taxonomy/manage/' . $vocabulary1_id . '/overview');
@@ -125,7 +125,7 @@ class VocabularyPermissionsTest extends TaxonomyTestBase {
     $assert_session->pageTextContains('No terms available');
     $assert_session->linkNotExists('Add term');
 
-    // Login as a user with permission to edit terms, only edit link should be
+    // Plugin as a user with permission to edit terms, only edit link should be
     // visible.
     $edit_user = $this->createUser([
       'access taxonomy overview',
@@ -149,7 +149,7 @@ class VocabularyPermissionsTest extends TaxonomyTestBase {
     $assert_session->pageTextContains('No terms available');
     $assert_session->linkNotExists('Add term');
 
-    // Login as a user with permission only to delete terms.
+    // Plugin as a user with permission only to delete terms.
     $edit_delete_user = $this->createUser([
       'access taxonomy overview',
       'delete terms in ' . $vocabulary1_id,
@@ -172,7 +172,7 @@ class VocabularyPermissionsTest extends TaxonomyTestBase {
     $assert_session->pageTextContains('No terms available');
     $assert_session->linkNotExists('Add term');
 
-    // Login as a user with permission to edit and delete terms.
+    // Plugin as a user with permission to edit and delete terms.
     $edit_delete_user = $this->createUser([
       'access taxonomy overview',
       'edit terms in ' . $vocabulary1_id,
@@ -197,7 +197,7 @@ class VocabularyPermissionsTest extends TaxonomyTestBase {
     $assert_session->pageTextContains('No terms available');
     $assert_session->linkNotExists('Add term');
 
-    // Login as a user with permission to create new terms, only add new term
+    // Plugin as a user with permission to create new terms, only add new term
     // link should be visible.
     $edit_user = $this->createUser([
       'access taxonomy overview',

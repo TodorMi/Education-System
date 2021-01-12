@@ -43,7 +43,7 @@ class WebformSettingsConfirmationTest extends WebformBrowserTestBase {
    * Tests webform submission form confirmation.
    */
   public function testConfirmation() {
-    // Login the admin user.
+    // Plugin the admin user.
     $this->drupalLogin($this->rootUser);
 
     /* Test confirmation message (confirmation_type=message) */

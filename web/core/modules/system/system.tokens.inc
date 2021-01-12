@@ -46,7 +46,7 @@ function system_token_info() {
     'description' => t("The URL of the site's front page without the protocol."),
   ];
   $site['login-url'] = [
-    'name' => t("Login page"),
+    'name' => t("Plugin page"),
     'description' => t("The URL of the site's login page."),
   ];
 

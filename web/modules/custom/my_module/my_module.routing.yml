@@ -1,8 +1,8 @@
 my_module.show_text:
   path: '/my_module/terms'
-  defaults: 
+  defaults:
     _controller: '\Drupal\my_module\Controller\HelloController::showContent'
-    _title: 'Terms and conditions'
+    _title: 'Description of the Organization'
   requirements:
     _permission: 'access content'
 

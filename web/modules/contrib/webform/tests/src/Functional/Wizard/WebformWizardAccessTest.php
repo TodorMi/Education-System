@@ -50,7 +50,7 @@ class WebformWizardAccessTest extends WebformWizardTestBase {
     $this->assertNoRaw('<b>Authenticated</b>');
     $this->assertNoRaw('<b>Private</b>');
 
-    // Login authenticated user.
+    // Plugin authenticated user.
     $this->drupalLogin($this->rootUser);
 
     // Check authenticated user can access 'All', 'Authenticated', and 'Private' form pages.

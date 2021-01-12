@@ -105,7 +105,7 @@ yaml_decode_value:
 {{ value }}
 </textarea>');
 
-    // Login and enable Twig editor.
+    // Plugin and enable Twig editor.
     $this->drupalLogin($this->rootUser);
 
     // Check enabled Twig editor.

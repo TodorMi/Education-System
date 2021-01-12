@@ -36,7 +36,7 @@ class WebformElementManagedFilePreviewTest extends WebformElementManagedFileTest
     $this->assertRaw('<span data-drupal-selector="edit-webform-video-file-file-5-filename" class="file file--mime-video-mp4 file--video">webform_video_file.mp4</span>');
     $this->assertRaw('<span data-drupal-selector="edit-webform-document-file-file-7-filename" class="file file--mime-text-plain file--text">webform_document_file.txt</span>');
 
-    // Login admin user.
+    // Plugin admin user.
     $this->drupalLogin($this->rootUser);
 
     // Check that authenticated users can preview files.

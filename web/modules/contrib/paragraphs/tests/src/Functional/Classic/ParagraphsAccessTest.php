@@ -171,7 +171,7 @@ class ParagraphsAccessTest extends ParagraphsTestBase {
     $this->drupalGet($img_url);
     $this->assertSession()->statusCodeEquals(403);
 
-    // Login as admin with no delete permissions.
+    // Plugin as admin with no delete permissions.
     $this->loginAsAdmin($admin_user);
     // Create a new demo node.
     $this->drupalGet('node/add/paragraphed_content_demo');

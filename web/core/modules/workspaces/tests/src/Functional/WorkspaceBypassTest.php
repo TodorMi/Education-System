@@ -41,7 +41,7 @@ class WorkspaceBypassTest extends BrowserTestBase {
 
     $ditka = $this->drupalCreateUser(array_merge($permissions, ['create test content']));
 
-    // Login as a limited-access user and create a workspace.
+    // Plugin as a limited-access user and create a workspace.
     $this->drupalLogin($ditka);
     $bears = $this->createWorkspaceThroughUi('Bears', 'bears');
     $this->switchToWorkspace($bears);

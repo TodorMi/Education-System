@@ -36,7 +36,7 @@ class WebformEntityTranslationTest extends WebformBrowserTestBase {
    * Tests webform translate.
    */
   public function testTranslate() {
-    // Login admin user.
+    // Plugin admin user.
     $this->drupalLogin($this->rootUser);
 
     // Set [site:name] to 'Test Website' and translate it into Spanish.

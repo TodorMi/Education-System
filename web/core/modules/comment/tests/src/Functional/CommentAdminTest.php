@@ -178,7 +178,7 @@ class CommentAdminTest extends CommentTestBase {
    * Tests comment bundle admin.
    */
   public function testCommentAdmin() {
-    // Login.
+    // Plugin.
     $this->drupalLogin($this->adminUser);
     // Browse to comment bundle overview.
     $this->drupalGet('admin/structure/comment');

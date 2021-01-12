@@ -59,7 +59,7 @@ class WebformElementMessageTest extends WebformElementBrowserTestBase {
     $this->assertNoRaw('data-message-storage="user"');
     $this->assertNoRaw('data-message-storage="state"');
 
-    // Login to test closing message via 'user' and 'state' storage.
+    // Plugin to test closing message via 'user' and 'state' storage.
     $this->drupalLogin($this->drupalCreateUser());
 
     // Check that close links are enabled.

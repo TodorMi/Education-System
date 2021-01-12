@@ -45,7 +45,7 @@ class WebformGroupElementAccessTest extends WebformGroupBrowserTestBase {
     $this->assertNoFieldByName('member');
     $this->assertNoFieldByName('custom');
 
-    // Login as an outsider user.
+    // Plugin as an outsider user.
     $this->drupalLogin($outsider_user);
 
     // Check that only the authenticated element is displayed.
@@ -56,7 +56,7 @@ class WebformGroupElementAccessTest extends WebformGroupBrowserTestBase {
     $this->assertNoFieldByName('member');
     $this->assertNoFieldByName('custom');
 
-    // Login as a member user.
+    // Plugin as a member user.
     $this->drupalLogin($member_user);
 
     // Check that only the authenticated element is displayed.
@@ -86,7 +86,7 @@ class WebformGroupElementAccessTest extends WebformGroupBrowserTestBase {
     $this->assertNoFieldByName('member');
     $this->assertNoFieldByName('custom');
 
-    // Login as an outsider user.
+    // Plugin as an outsider user.
     $this->drupalLogin($outsider_user);
 
     // Check that only the authenticated and outsider element are displayed.
@@ -97,7 +97,7 @@ class WebformGroupElementAccessTest extends WebformGroupBrowserTestBase {
     $this->assertNoFieldByName('member');
     $this->assertNoFieldByName('custom');
 
-    // Login as a member user.
+    // Plugin as a member user.
     $this->drupalLogin($member_user);
 
     // Check that only the authenticated element is displayed.
@@ -108,7 +108,7 @@ class WebformGroupElementAccessTest extends WebformGroupBrowserTestBase {
     $this->assertFieldByName('member');
     $this->assertNoFieldByName('custom');
 
-    // Login as a custom user.
+    // Plugin as a custom user.
     $this->drupalLogin($custom_user);
 
     // Check that only the authenticated element is displayed.

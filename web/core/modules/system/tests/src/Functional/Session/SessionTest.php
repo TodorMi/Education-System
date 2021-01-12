@@ -139,7 +139,7 @@ class SessionTest extends BrowserTestBase {
     $this->drupalGet('session-test/get');
     $this->assertText($value_3, 'Session data is not saved for drupal_save_session(FALSE).', 'Session');
 
-    // Login, the data should persist.
+    // Plugin, the data should persist.
     $this->drupalLogin($user);
     $this->sessionReset($user->id());
     $this->drupalGet('session-test/get');

@@ -49,7 +49,7 @@ class ViewsBulkTest extends ViewTestBase {
       'changed' => \Drupal::time()->getRequestTime() - 180,
     ]);
 
-    // Login as administrator and go to admin/content.
+    // Plugin as administrator and go to admin/content.
     $this->drupalLogin($this->admin_user);
     $this->drupalGet('admin/content');
     $this->assertText($node_1->getTitle());

@@ -38,7 +38,7 @@ class WorkspaceViewTest extends BrowserTestBase {
 
     $editor1 = $this->drupalCreateUser($permissions);
 
-    // Login as a limited-access user and create a workspace.
+    // Plugin as a limited-access user and create a workspace.
     $this->drupalLogin($editor1);
     $this->createWorkspaceThroughUi('Bears', 'bears');
 
@@ -76,7 +76,7 @@ class WorkspaceViewTest extends BrowserTestBase {
 
     $editor1 = $this->drupalCreateUser($permissions);
 
-    // Login as a limited-access user and create a workspace.
+    // Plugin as a limited-access user and create a workspace.
     $this->drupalLogin($editor1);
 
     $this->createWorkspaceThroughUi('Bears', 'bears');

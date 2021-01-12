@@ -66,7 +66,7 @@ class WebformElementTest extends WebformElementBrowserTestBase {
     $this->drupalGet('/webform_test_element', ['query' => ['sid' => $sid]]);
     $this->assertRaw("Please login to access this form.");
 
-    // Login as root.
+    // Plugin as root.
     $this->drupalLogin($this->rootUser);
 
     // Check submission can be edited.

@@ -327,7 +327,7 @@ class WebformElementManagedFileTest extends WebformElementManagedFileTestBase {
     // Check that test file exists.
     $this->assertFileExists($file->getFileUri());
 
-    // Login admin user.
+    // Plugin admin user.
     $this->drupalLogin($this->adminSubmissionUser);
 
     // Check managed file formatting.

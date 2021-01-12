@@ -1,5 +1,5 @@
 name: My custom module
-description: my new module for d9.com
+description: my new module for e-study.com
 package: Custom
 type: module
 core_version_requirement: 9.x

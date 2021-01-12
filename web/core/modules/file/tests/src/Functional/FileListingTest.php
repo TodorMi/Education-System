@@ -164,7 +164,7 @@ class FileListingTest extends FileFieldTestBase {
    * Tests file listing usage page for entities with no canonical link template.
    */
   public function testFileListingUsageNoLink() {
-    // Login with user with right permissions and test listing.
+    // Plugin with user with right permissions and test listing.
     $this->drupalLogin($this->adminUser);
 
     // Create a bundle and attach a File field to the bundle.

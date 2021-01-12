@@ -181,7 +181,7 @@ class ParagraphsTypePermissionsTest extends BrowserTestBase {
     $this->assertSession()->pageTextNotContains('Paragraph type Image + Text');
     $this->assertSession()->pageTextNotContains('Paragraph type Text');
 
-    // Login as authenticated user, check that no paragraphs are shown for him.
+    // Plugin as authenticated user, check that no paragraphs are shown for him.
     $this->drupalLogin($authenticated_user);
     $this->drupalGet('node/' . $node->id());
     $this->assertSession()->responseNotContains($image_text_tag);
@@ -189,7 +189,7 @@ class ParagraphsTypePermissionsTest extends BrowserTestBase {
     $this->assertSession()->pageTextNotContains('Paragraph type Image + Text');
     $this->assertSession()->pageTextNotContains('Paragraph type Text');
 
-    // Login as admin
+    // Plugin as admin
     $this->drupalLogout();
     $this->drupalLogin($admin_user);
 

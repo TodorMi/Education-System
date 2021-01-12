@@ -232,7 +232,7 @@ class LayoutBuilderQuickEditTest extends QuickEditJavascriptTestBase {
   }
 
   /**
-   * Login the Layout admin user for the test.
+   * Plugin the Layout admin user for the test.
    */
   protected function loginLayoutAdmin() {
     // Enable for the Layout Builder.

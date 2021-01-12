@@ -129,7 +129,7 @@ class WebformAccessSubmissionPermissionsTest extends WebformBrowserTestBase {
     // Any submission permissions.
     /**************************************************************************/
 
-    // Login as any user.
+    // Plugin as any user.
     $this->drupalLogin($any_submission_account);
 
     // Check 'access webform submission user' permission.

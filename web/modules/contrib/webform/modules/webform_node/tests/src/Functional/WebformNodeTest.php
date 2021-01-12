@@ -216,7 +216,7 @@ class WebformNodeTest extends WebformNodeBrowserTestBase {
     $this->assertRaw('0 webform + source entity submission(s)');
     $this->assertRaw('3 webform + source entity limit');
 
-    // Login as normal user.
+    // Plugin as normal user.
     $this->drupalLogin($normal_user);
 
     // Create submission as authenticated user.
@@ -234,7 +234,7 @@ class WebformNodeTest extends WebformNodeBrowserTestBase {
     $this->assertRaw('1 webform + source entity submission(s)');
     $this->assertRaw('3 webform + source entity limit');
 
-    // Login as root user.
+    // Plugin as root user.
     $this->drupalLogin($this->rootUser);
 
     // Check submission limit tokens.
@@ -251,7 +251,7 @@ class WebformNodeTest extends WebformNodeBrowserTestBase {
     $this->assertRaw('remaining:webform:source_entity: 0');
     $this->assertRaw('remaining:user:source_entity: 0');
 
-    // Login as normal user.
+    // Plugin as normal user.
     $this->drupalLogin($normal_user);
 
     $this->drupalGet('/node/' . $node->id());

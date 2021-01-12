@@ -69,7 +69,7 @@ class WebformResultsDisabledTest extends WebformBrowserTestBase {
     $webform_results_disabled->setSetting('results_disabled', FALSE);
     $webform_results_disabled->save();
 
-    // Login admin.
+    // Plugin admin.
     $this->drupalLogin($this->rootUser);
 
     // Check that results tab is accessible.

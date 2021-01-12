@@ -38,7 +38,7 @@ class UserPasswordResetForm extends FormBase {
    * @param int $timestamp
    *   The current timestamp.
    * @param string $hash
-   *   Login link hash.
+   *   Plugin link hash.
    */
   public function buildForm(array $form, FormStateInterface $form_state, AccountInterface $user = NULL, $expiration_date = NULL, $timestamp = NULL, $hash = NULL) {
     if ($expiration_date) {

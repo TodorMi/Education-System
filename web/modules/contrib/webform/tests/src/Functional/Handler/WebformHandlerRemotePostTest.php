@@ -117,7 +117,7 @@ options:
   last_name: Smith");
     $this->assertRaw('Processed draft_created request.');
 
-    // Login root user.
+    // Plugin root user.
     $this->drupalLogin($this->rootUser);
 
     // Check 'convert' operation.

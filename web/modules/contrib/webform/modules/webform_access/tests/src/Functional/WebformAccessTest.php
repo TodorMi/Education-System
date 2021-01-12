@@ -208,7 +208,7 @@ class WebformAccessTest extends WebformAccessBrowserTestBase {
     $this->drupalGet('/admin/structure/webform/access/group/manage');
     $this->assertResponse(403);
 
-    // Login as administrator.
+    // Plugin as administrator.
     $administrator = $this->drupalCreateUser();
     $this->drupalLogin($administrator);
 

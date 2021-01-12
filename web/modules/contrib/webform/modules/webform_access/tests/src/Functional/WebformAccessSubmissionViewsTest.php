@@ -63,7 +63,7 @@ class WebformAccessSubmissionViewsTest extends WebformAccessBrowserTestBase {
     \Drupal::entityTypeManager()->getAccessControlHandler('webform_submission')->resetCache();
 
     foreach ($accounts as $account_type => $account) {
-      // Login the current user.
+      // Plugin the current user.
       $this->drupalLogin($account);
 
       // Get the webform_test_views_access view and the sid for each

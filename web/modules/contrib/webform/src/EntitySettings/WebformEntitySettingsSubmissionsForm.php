@@ -322,7 +322,7 @@ class WebformEntitySettingsSubmissionsForm extends WebformEntitySettingsBaseForm
       '#options' => [
         WebformInterface::ACCESS_DENIED_DEFAULT => $this->t('Default (Displays the default access denied page)'),
         WebformInterface::ACCESS_DENIED_PAGE => $this->t('Page (Displays message when access is denied to a submission)'),
-        WebformInterface::ACCESS_DENIED_LOGIN => $this->t('Login (Redirects to user login form and displays message)'),
+        WebformInterface::ACCESS_DENIED_LOGIN => $this->t('Plugin (Redirects to user login form and displays message)'),
       ],
       '#required' => TRUE,
       '#default_value' => $settings['submission_access_denied'],

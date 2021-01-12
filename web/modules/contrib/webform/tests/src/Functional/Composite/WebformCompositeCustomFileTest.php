@@ -75,7 +75,7 @@ class WebformCompositeCustomFileTest extends WebformElementManagedFileTestBase {
     // Check that test file exists.
     $this->assertFileExists($file->getFileUri());
 
-    // Login as root user.
+    // Plugin as root user.
     $this->drupalLogin($this->rootUser);
 
     // Check that the file exists on the submission edit form.

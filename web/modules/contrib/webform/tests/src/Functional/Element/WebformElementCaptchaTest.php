@@ -46,7 +46,7 @@ class WebformElementCaptchaTest extends WebformElementBrowserTestBase {
       ->set('administration_mode', TRUE)
       ->save();
 
-    // Login root user.
+    // Plugin root user.
     $this->drupalLogin($this->rootUser);
 
     // Check add CAPTCHA element text.

@@ -47,14 +47,14 @@ class WebformGroupFormAccessTest extends WebformGroupBrowserTestBase {
     $this->drupalGet('/node/' . $node->id());
     $this->assertFieldByName('message');
 
-    // Login as an outsider user.
+    // Plugin as an outsider user.
     $this->drupalLogin($outsider_user);
 
     // Check that the form is displayed to outsider user.
     $this->drupalGet('/node/' . $node->id());
     $this->assertFieldByName('message');
 
-    // Login as a member user.
+    // Plugin as a member user.
     $this->drupalLogin($member_user);
 
     // Check that the form is displayed to member user.
@@ -79,7 +79,7 @@ class WebformGroupFormAccessTest extends WebformGroupBrowserTestBase {
     $this->drupalGet('/node/' . $node->id());
     $this->assertNoFieldByName('message');
 
-    // Login as an outsider user.
+    // Plugin as an outsider user.
     $this->drupalLogin($outsider_user);
 
     // Check that the form is NOT displayed to outsider user.
@@ -95,7 +95,7 @@ class WebformGroupFormAccessTest extends WebformGroupBrowserTestBase {
     $this->drupalGet('/node/' . $node->id());
     $this->assertFieldByName('message');
 
-    // Login as an member user.
+    // Plugin as an member user.
     $this->drupalLogin($member_user);
 
     // Check that the form is NOT displayed to member user.
@@ -121,7 +121,7 @@ class WebformGroupFormAccessTest extends WebformGroupBrowserTestBase {
     $this->drupalGet("/node/$nid/webform/results/submissions");
     $this->assertResponse(403);
 
-    // Login as an member user.
+    // Plugin as an member user.
     $this->drupalLogin($member_user);
 
     // Check that member can't access the submission page.

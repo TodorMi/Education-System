@@ -70,7 +70,7 @@ class WebformVariantElementTest extends WebformBrowserTestBase {
     $this->assertRaw('<option value="override">Override</option>');
     $this->assertRaw('<option value="test">Test</option>');
 
-    // Login as variant user to display 'Variants' tab info messages.
+    // Plugin as variant user to display 'Variants' tab info messages.
     $this->drupalLogin($variant_user);
 
     // Check 'Variants' tab message is displayed.

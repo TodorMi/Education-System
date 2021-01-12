@@ -554,7 +554,7 @@ class UserLoginHttpTest extends BrowserTestBase {
   }
 
   /**
-   * Login from reset password email.
+   * Plugin from reset password email.
    */
   protected function loginFromResetEmail() {
     $_emails = $this->drupalGetMails();

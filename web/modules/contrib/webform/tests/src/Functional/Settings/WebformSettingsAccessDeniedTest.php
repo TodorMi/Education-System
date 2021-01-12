@@ -118,7 +118,7 @@ class WebformSettingsAccessDeniedTest extends WebformBrowserTestBase {
     $this->drupalGet('/<front>');
     $this->assertRaw('<div style="border: 1px solid red" class="webform-access-denied">Please login to access <b>Test: Webform: Access Denied</b>.</div>');
 
-    // Login.
+    // Plugin.
     $this->drupalLogin($this->rootUser);
 
     // Check block displays wth webform.

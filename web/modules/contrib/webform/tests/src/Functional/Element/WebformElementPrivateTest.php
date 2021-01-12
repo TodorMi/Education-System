@@ -28,7 +28,7 @@ class WebformElementPrivateTest extends WebformElementBrowserTestBase {
 
     /**************************************************************************/
 
-    // Login as normal user.
+    // Plugin as normal user.
     $this->drupalLogin($normal_user);
 
     // Create two webform submissions.
@@ -48,7 +48,7 @@ class WebformElementPrivateTest extends WebformElementBrowserTestBase {
     $this->drupalGet('/webform/test_element_private/submissions');
     $this->assertNoRaw('<th specifier="element__private">');
 
-    // Login as root user.
+    // Plugin as root user.
     $this->drupalLogin($this->rootUser);
 
     // Check element with #private property visible for admin user.

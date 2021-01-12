@@ -49,7 +49,7 @@ class WebformBrowserTestBaseTest extends WebformBrowserTestBase {
     $sid = $this->postSubmission($webform);
     $this->assertFalse($sid);
 
-    // Login root user.
+    // Plugin root user.
     $this->drupalLogin($this->rootUser);
 
     // Check post test submission returns an sid.

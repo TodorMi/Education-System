@@ -101,7 +101,7 @@ class WebformSubmissionLogTest extends WebformBrowserTestBase {
     $this->assertNull($log->entity_type);
     $this->assertNull($log->entity_id);
 
-    // Login admin user.
+    // Plugin admin user.
     $this->drupalLogin($admin_user);
 
     $submission_log = $this->getSubmissionLog();

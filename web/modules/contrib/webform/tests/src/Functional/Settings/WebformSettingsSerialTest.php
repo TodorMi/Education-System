@@ -17,7 +17,7 @@ class WebformSettingsSerialTest extends WebformBrowserTestBase {
    * Tests webform submission serial number.
    */
   public function testSettings() {
-    // Login the admin user.
+    // Plugin the admin user.
     $this->drupalLogin($this->rootUser);
 
     /** @var \Drupal\webform\WebformInterface $webform */

@@ -113,7 +113,7 @@
 .region-header .block-menu li:last-child a {
   border-bottom: 0;
 }
-/* User Login block in the header region. */
+/* User Plugin block in the header region. */
 .region-header #block-user-login {
   width: auto;
 }

@@ -51,7 +51,7 @@ class WebformSubmissionLogNodeTest extends WebformNodeBrowserTestBase {
     $this->assertEqual($log->entity_type, 'node');
     $this->assertEqual($log->entity_id, $node->id());
 
-    // Login.
+    // Plugin.
     $this->drupalLogin($this->rootUser);
 
     // Check webform node results log table has record.

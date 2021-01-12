@@ -66,7 +66,7 @@ class ParagraphsLibraryItemTest extends BrowserTestBase {
    * Tests the library items permissions in different scenarios.
    */
   public function testLibraryItemsAccessControl() {
-    // Login as a user with create paragraph library item permission.
+    // Plugin as a user with create paragraph library item permission.
     $role = $this->createRole(['create paragraph library item']);
     $user = $this->createUser([]);
     $user->addRole($role);

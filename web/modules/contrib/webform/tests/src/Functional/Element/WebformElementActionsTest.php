@@ -66,7 +66,7 @@ class WebformElementActionsTest extends WebformElementBrowserTestBase {
     // Check no actions.
     $this->assertNoCssSelect('.form-actions');
 
-    // Login as admin.
+    // Plugin as admin.
     $this->drupalLogin($this->rootUser);
 
     // Check custom update action.

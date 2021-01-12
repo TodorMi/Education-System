@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700,300);
 
-/* --------------------------------------------- 
+/* ---------------------------------------------
 * Filename:     custom-style.css
 * Version:      1.0.0 (2016-02-27)
 * Website:      http://www.zymphonies.com
@@ -316,7 +316,7 @@ input, button, select, textarea{
   display: block;
 }
 
-.btn, 
+.btn,
 input[type="submit"]{
   background: #EE0328;
   color: #fff;
@@ -326,7 +326,7 @@ input[type="submit"]{
   height: 39px;
 }
 
-.btn:hover, 
+.btn:hover,
 input[type="submit"]:hover{
   background: #CD1B01;
 }
@@ -369,17 +369,17 @@ nav h2{
 }
 
 .menu-base-theme,
-.menu-base-theme a, 
-.menu-base-theme a:hover, 
-.menu-base-theme a:focus, 
-.menu-base-theme a:active, 
+.menu-base-theme a,
+.menu-base-theme a:hover,
+.menu-base-theme a:focus,
+.menu-base-theme a:active,
 .menu-base-theme a.highlighted{
   background: none;
 }
 
-.menu-base-theme a:hover, 
-.menu-base-theme a:focus, 
-.menu-base-theme a:active, 
+.menu-base-theme a:hover,
+.menu-base-theme a:focus,
+.menu-base-theme a:active,
 .menu-base-theme a.highlighted{
   color: #fff;
 }
@@ -406,7 +406,7 @@ nav h2{
   border-radius: 2px;
   border: 1px solid #DCDCDC;
   background: #EFEFEF;
-} 
+}
 
 .navbar-toggle{
   z-index: 999;
@@ -480,11 +480,11 @@ nav h2{
   border-top: 0;
 }
 
-.bd-example-type h1, 
-.bd-example-type h2, 
-.bd-example-type h3, 
-.bd-example-type h4, 
-.bd-example-type h5, 
+.bd-example-type h1,
+.bd-example-type h2,
+.bd-example-type h3,
+.bd-example-type h4,
+.bd-example-type h5,
 .bd-example-type h6 {
   margin: 0;
 }
@@ -502,7 +502,7 @@ nav h2{
   width: 100%;
 }
 
-/*User Login Form*/
+/*User Plugin Form*/
 
 .user-login-form,
 .user-form,
@@ -522,7 +522,7 @@ nav h2{
   width: 100%;
 }
 
-.form-composite > .fieldset-wrapper > .description, 
+.form-composite > .fieldset-wrapper > .description,
 .form-item .description {
   font-size: 11px;
   color: #999;

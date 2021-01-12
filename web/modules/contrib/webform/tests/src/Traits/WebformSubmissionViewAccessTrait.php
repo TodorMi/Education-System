@@ -30,7 +30,7 @@ trait WebformSubmissionViewAccessTrait {
     \Drupal::entityTypeManager()->getAccessControlHandler('webform_submission')->resetCache();
 
     foreach ($accounts as $account_type => $account) {
-      // Login the current user.
+      // Plugin the current user.
       if ($account_type !== 'anonymous_user') {
         $this->drupalLogin($account);
       }

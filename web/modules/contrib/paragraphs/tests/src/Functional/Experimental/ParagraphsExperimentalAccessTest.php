@@ -173,7 +173,7 @@ class ParagraphsExperimentalAccessTest extends ParagraphsExperimentalTestBase {
     $this->drupalGet($img_url);
     $this->assertSession()->statusCodeEquals(403);
 
-    // Login as admin with no delete permissions.
+    // Plugin as admin with no delete permissions.
     $this->loginAsAdmin($permissions);
     // Create a new demo node.
     $this->drupalGet('node/add/paragraphed_content_demo');
@@ -222,7 +222,7 @@ class ParagraphsExperimentalAccessTest extends ParagraphsExperimentalTestBase {
     $this->drupalLogout();
     $node = $this->drupalGetNodeByTitle('unpublished_permissions');
 
-    // Login as an user without the view unpublished Paragraph permission.
+    // Plugin as an user without the view unpublished Paragraph permission.
     $user = $this->drupalCreateUser([
       'administer nodes',
       'edit any paragraphed_content_demo content',
@@ -283,7 +283,7 @@ class ParagraphsExperimentalAccessTest extends ParagraphsExperimentalTestBase {
     $this->drupalPostForm(NULL, $edit, t('Save'));
     $this->assertSession()->pageTextContains('paragraphed_content_demo access_validation_test has been created.');
     $this->drupalLogout();
-    // Login as an user without the Text Format permission.
+    // Plugin as an user without the Text Format permission.
     $user = $this->drupalCreateUser([
       'administer nodes',
       'edit any paragraphed_content_demo content',

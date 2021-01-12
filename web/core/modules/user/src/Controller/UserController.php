@@ -105,7 +105,7 @@ class UserController extends ControllerBase {
    * @param int $timestamp
    *   The current timestamp.
    * @param string $hash
-   *   Login link hash.
+   *   Plugin link hash.
    *
    * @return \Symfony\Component\HttpFoundation\RedirectResponse
    *   The redirect response.
@@ -209,7 +209,7 @@ class UserController extends ControllerBase {
    * @param int $timestamp
    *   The current timestamp.
    * @param string $hash
-   *   Login link hash.
+   *   Plugin link hash.
    *
    * @return \Symfony\Component\HttpFoundation\RedirectResponse
    *   Returns a redirect to the user edit form if the information is correct.

@@ -38,7 +38,7 @@ class CaseInsensitivePathTest extends BrowserTestBase {
     $this->drupalGet('user/login');
     $this->assertSession()->statusCodeEquals(200);
     $this->assertSession()->pageTextMatches('/Log in/');
-    $this->drupalGet('User/Login');
+    $this->drupalGet('User/Plugin');
     $this->assertSession()->statusCodeEquals(200);
     $this->assertSession()->pageTextMatches('/Log in/');
 

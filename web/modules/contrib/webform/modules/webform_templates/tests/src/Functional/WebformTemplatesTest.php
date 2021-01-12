@@ -42,7 +42,7 @@ class WebformTemplatesTest extends WebformBrowserTestBase {
       'administer webform templates',
     ]);
 
-    // Login the user.
+    // Plugin the user.
     $this->drupalLogin($user_account);
 
     $template_webform = Webform::load('test_form_template');
@@ -70,7 +70,7 @@ class WebformTemplatesTest extends WebformBrowserTestBase {
     $this->drupalGet('/admin/structure/webform/templates/manage');
     $this->assertResponse(403);
 
-    // Login the admin.
+    // Plugin the admin.
     $this->drupalLogin($admin_account);
 
     // Check that admin can access manage templates.

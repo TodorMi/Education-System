@@ -62,7 +62,7 @@ class WebformSettingsDraftTest extends WebformBrowserTestBase {
     foreach ($webform_ids as $webform_id => $webform_title) {
       $is_authenticated = ($webform_id === 'test_form_draft_authenticated') ? TRUE : FALSE;
 
-      // Login draft account.
+      // Plugin draft account.
       ($is_authenticated) ? $this->drupalLogin($normal_user) : $this->drupalLogout();
 
       $webform = Webform::load($webform_id);
@@ -99,14 +99,14 @@ class WebformSettingsDraftTest extends WebformBrowserTestBase {
       $this->assertRaw('Sorry… This form is closed to new submissions.');
       $webform->setStatus(TRUE)->save();
 
-      // Login admin account.
+      // Plugin admin account.
       $this->drupalLogin($admin_submission_user);
 
       // Check submission.
       $this->drupalGet("admin/structure/webform/manage/$webform_id/submission/$sid");
       $this->assertRaw('<div><b>Is draft:</b> Yes</div>');
 
-      // Login draft account.
+      // Plugin draft account.
       ($is_authenticated) ? $this->drupalLogin($normal_user) : $this->drupalLogout();
 
       // Check update draft and bypass validation.
@@ -164,7 +164,7 @@ class WebformSettingsDraftTest extends WebformBrowserTestBase {
     $this->assertRaw('You have an existing draft');
     $this->assertFieldByName('name', 'John Smith');
 
-    // Login the normal user.
+    // Plugin the normal user.
     $this->drupalLogin($normal_user);
 
     // Check that submission is now owned by the normal user.
@@ -203,7 +203,7 @@ class WebformSettingsDraftTest extends WebformBrowserTestBase {
     $this->drupalGet('/webform/test_form_draft_anonymous');
     $this->assertRaw('You have an existing draft');
 
-    // Login the normal user.
+    // Plugin the normal user.
     $this->drupalLogin($normal_user);
 
     $webform_submission_storage->resetCache();

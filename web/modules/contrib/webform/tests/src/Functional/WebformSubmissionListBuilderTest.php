@@ -49,7 +49,7 @@ class WebformSubmissionListBuilderTest extends WebformBrowserTestBase {
 
     /**************************************************************************/
 
-    // Login the own submission user.
+    // Plugin the own submission user.
     $this->drupalLogin($own_submission_user);
 
     // Make the second submission to be starred (aka sticky).

@@ -69,7 +69,7 @@ class WebformOptionsLimitBooleanTest extends WebformBrowserTestBase {
     // Check that boolean remove is removed.
     $this->assertNoCssSelect('#edit-boolean-limit-remove');
 
-    // Login as an admin.
+    // Plugin as an admin.
     $this->drupalLogin($this->rootUser);
 
     // Check that existing submission values are not disabled.

@@ -149,7 +149,7 @@ class WebformAccessEntityRulesTest extends WebformBrowserTestBase {
       $this->assertResponse(403, 'Webform returns access denied');
     }
 
-    // Login.
+    // Plugin.
     $this->drupalLogin($account);
 
     // Check that all the test paths are access denied for authenticated.
@@ -233,7 +233,7 @@ class WebformAccessEntityRulesTest extends WebformBrowserTestBase {
       $submission->delete();
     }
 
-    // Login and post a submission as a user.
+    // Plugin and post a submission as a user.
     $this->drupalLogin($account);
 
     // Check no view previous submission message.

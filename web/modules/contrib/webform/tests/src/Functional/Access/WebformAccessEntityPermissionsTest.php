@@ -38,7 +38,7 @@ class WebformAccessEntityPermissionsTest extends WebformBrowserTestBase {
 
     /**************************************************************************/
 
-    // Login as user who can access own webform.
+    // Plugin as user who can access own webform.
     $this->drupalLogin($own_account);
 
     // Check create own webform.
@@ -63,7 +63,7 @@ class WebformAccessEntityPermissionsTest extends WebformBrowserTestBase {
     $this->drupalGet('/admin/structure/webform/manage/test_own/results/submissions');
     $this->assertResponse(200);
 
-    // Login as user who can access any webform.
+    // Plugin as user who can access any webform.
     $this->drupalLogin($any_account);
 
     // Check duplicate any webform.
@@ -82,7 +82,7 @@ class WebformAccessEntityPermissionsTest extends WebformBrowserTestBase {
     $own_webform = Webform::load('test_own');
     $own_webform->setOwner($any_account)->save();
 
-    // Login as user who can access own webform.
+    // Plugin as user who can access own webform.
     $this->drupalLogin($own_account);
 
     // Check webform submission overview does not contains any webform.
