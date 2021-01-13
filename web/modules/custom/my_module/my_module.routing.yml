@@ -1,5 +1,5 @@
 my_module.show_text:
-  path: '/my_module/terms'
+  path: '/my_module/info'
   defaults:
     _controller: '\Drupal\my_module\Controller\HelloController::showContent'
     _title: 'Description of the Organization'
@@ -7,7 +7,7 @@ my_module.show_text:
     _permission: 'access content'
 
 my_module.config_form:
-  path: '/my_module/config'
+  path: '/my_module/org'
   defaults:
     _form: '\Drupal\my_module\Form\MyConfigForm'
     _title: 'My Config Form'

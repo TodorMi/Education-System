@@ -8,12 +8,13 @@ class HelloController extends ControllerBase {
 
     public function showContent(){
         $config = \Drupal::config('my_module.settings');
-        $terms = $config->get('description')['value'];
-        $organization = $config->get('organization_name')['value'];
+        $description = $config->get('description')['value'];
+        $picture = $config->get('picture')['value'];
+        $organization = $config->get('organization_name');
         return [
-            '#type' => 'markup',
-            '#markup' => $terms, $organization
-
+          'markup1' => ['#markup'=> $picture],
+          'markup2' => ['#markup'=> $organization],
+          'markup3' => ['#markup'=> $description],
         ];
     }
 

@@ -31,6 +31,13 @@ class MyConfigForm extends ConfigFormBase {
             '#default_value' => $config->get('organization_name')
         ];
 
+      $form['picture'] = [
+        '#type' => 'text_format',
+        '#title' => 'Picture of the organization',
+        '#description' => 'Choose a picture',
+        '#default_value' => $config->get('picture')['value'],
+        '#required' => TRUE,
+        ];
         $form['description'] = [
             '#type' => 'text_format',
             '#title' => 'Description of the organization',
@@ -52,6 +59,7 @@ class MyConfigForm extends ConfigFormBase {
     {
         $config = $this->config('my_module.settings');
         $config->set('organization_name',$form_state->getValue('organization_name'));
+        $config->set('picture',$form_state->getValue('picture'));
         $config->set('description',$form_state->getValue('description'));
 
         $config->save();

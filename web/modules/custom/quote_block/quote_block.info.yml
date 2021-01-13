@@ -1,0 +1,4 @@
+name: Quotes Block
+description: Building a quote block
+type: module
+core_version_requirement: 9.x

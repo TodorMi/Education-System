@@ -900,7 +900,7 @@ function hook_entity_bundle_create($entity_type_id, $bundle) {
  */
 function hook_entity_bundle_delete($entity_type_id, $bundle) {
   // Remove the settings associated with the bundle in my_module.settings.
-  $config = \Drupal::config('quote_module.settings');
+  $config = \Drupal::config('quote_block.settings');
   $bundle_settings = $config->get('bundle_settings');
   if (isset($bundle_settings[$entity_type_id][$bundle])) {
     unset($bundle_settings[$entity_type_id][$bundle]);
